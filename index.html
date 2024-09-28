@@ -50,10 +50,9 @@
       // 檢查輸入的帳號和密碼是否匹配
       const isValid = validUsers.some(user => user.username === username && user.password === password);
 
-      if (isValid) {
-        alert('登入成功！');
+      if (isValid) ｛
         // 跳轉到儀表板頁面
-        window.location.href = 'page1.html';
+        window.location.href = 'https://noc0212.github.io/codms/';
       } else {
         alert('使用者名稱或密碼錯誤');
       }
