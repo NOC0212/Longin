@@ -4,16 +4,17 @@
   <link rel="stylesheet" href="styles.css">
   <title>登入</title>
   <meta charset="UTF-8">
+  <link rel="webslte icon" href=https://thumb.ac-illust.com/f9/f9c7ebc299a416bc4ade9c45a9e89c9b_t.jpeg>
 </head>
 <body>
   <section>
     <div class="form-box">
       <div class="form-value">
         <form action="">
-          <h2>登入帳號</h2>
+          <h2>登入網頁</h2>
           <div class="inputbox">
             <input type="name" required>
-            <label for="">使用者名稱</label>
+            <label for="">提取碼</label>
           </div>
           <div class="inputbox">
             <input type="password" required>
@@ -21,12 +22,12 @@
           </div>
           <div class="forget">
             <label>
-              <p>忘記 <a href="#">密碼</a></p>
+              <p>忘記 <a href="#">提取碼（未完成）</a></p>
             </label>
           </div>
-          <button>登入</button>
+          <button>提取內容</button>
           <div class="register">
-            <p>沒有帳戶？ <a href="#">建立</a></p>
+            <p>沒有提取碼？ <a href="#">建立（未完成）</a></p>
           </div>
         </form>
       </div>
@@ -50,11 +51,12 @@
       // 檢查輸入的帳號和密碼是否匹配
       const isValid = validUsers.some(user => user.username === username && user.password === password);
 
-      if (isValid) ｛
+      if (isValid) {
+        alert('提取成功！');
         // 跳轉到儀表板頁面
-        window.location.href = 'https://noc0212.github.io/codms/';
+        window.location.href = 'https://noc0212.github.io/codms/codm.html';
       } else {
-        alert('使用者名稱或密碼錯誤');
+        alert('提取碼或密碼錯誤');
       }
     });
 // 禁用 F12 和 Ctrl+Shift+I (開發者工具)
